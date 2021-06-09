@@ -16,13 +16,108 @@
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
   </head>
+
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>Slide 1</section>
+        <section data-markdown>
+          <textarea data-template>
+            ### 微前端
+            Ming
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+              1. 介绍
+              2. 提问环节
+              3. 具体技术
+          </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            ## 介绍
+            1. 简介
+            2. 优劣分析
+            3. 演示
+          </textarea>
+        </section>
+        <section data-transition="zoom">
+          <section>1. 简介</section>
+          <section>
+            qiankun:<br />
+            微前端是一种多个团队通过独立发布功能的方式来共同构建现代化 web
+            应用的技术手段及方法策略。
+          </section>
+          <section>single-spa:<br />微前端是指存在于浏览器中的微服务。</section>
+          <section>
+            一种由独立交付的多个前端应用组成整体的架构风格。具体的，将前端应用分解成一些更小、更简单的能够独立开发、测试、部署的小块，而在用户看来仍然是内聚的单个产品
+          </section>
+          <section>
+            <img src="./assets/micro.png" alt="" />
+          </section>
+          <section>
+            <a
+              href="https://www.bilibili.com/video/BV1Mv411B7Cx?from=search&seid=8251951307652144353"
+              target="_blank"
+            >
+              微前端小视频</a
+            >
+          </section>
+        </section>
+        <section data-transition="zoom">
+          <section>2. 优劣分析</section>
+          <section data-markdown>
+            <textarea data-template>
+              ### 优
+              * 代码库更小，更内聚、可维护性更高
+              * 松耦合、自治的团队可扩展性更好
+              * 渐进地升级、更新甚至重写部分前端功能成为了可能
+            </textarea>
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+              ### 劣
+              * 导致依赖项冗余，增加用户的流量负担
+              * 团队自治程度的增加，可能会破坏协作
+            </textarea>
+          </section>
+        </section>
+        <section data-transition="zoom">
+          <section>3.演示</section>
+          <section>基础演示</section>
+          <section>实战演示</section>
+          <section data-markdown>
+            <textarea data-template>
+              ## 需要的帮助
+              * 产品:做好系统的拆分
+              * 运维:了解项目架构与发布流程
+              * 设计:各系统风格统一
+            </textarea>
+          </section>
+        </section>
+        <section>非技术性的提问环节</section>
+        <section data-markdown>
+          <textarea data-template>
+            ## 具体的技术
+            1. 方案的选择
+            2. 具体代码
+            3. 提问讨论环节
+          </textarea>
+        </section>
         <section>
-          <section>Slide 2</section>
-          <section>Slide 3</section>
+          <section data-markdown>
+            <textarea data-template>
+              1. 方案的选择
+            </textarea>
+          </section>
+          <section>
+            <img src="./assets/fangan.png" alt="" />
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+              2.具体代码
+            </textarea>
+          </section>
         </section>
       </div>
     </div>
@@ -37,7 +132,6 @@
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
-
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
       });
