@@ -98,7 +98,8 @@
         <section>非技术性的提问环节</section>
         <section data-markdown>
           <textarea data-template>
-            ## 具体的技术
+            ## 具体的技术            
+            (非战斗人员可撤离)
             1. 方案的选择
             2. 具体代码
             3. 提问讨论环节
@@ -111,8 +112,74 @@
             </textarea>
           </section>
           <section>
-            <img src="./assets/fangan.png" alt="" />
+            <table style="font-size: 60%">
+              <thead>
+                <tr>
+                  <th>方案</th>
+                  <th>优点</th>
+                  <th>缺点</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>qiankun</td>
+                  <td>
+                    <ol>
+                      <li>子应用开发完全发布独立</li>
+                      <li>预加载，按需加载</li>
+                      <li>html entry</li>
+                      <li>css隔离，js沙箱</li>
+                      <li>父子应用通讯</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ol>
+                      <li>一定的改造成本</li>
+                      <li>history 模式路由需要设置 baseUrl</li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>iFrame</td>
+                  <td>
+                    <ol>
+                      <li>完全隔离了css和js</li>
+                      <li>开发成本小</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ol>
+                      <li>页面加载问题</li>
+                      <li>页面通讯依赖postMessage</li>
+                      <li>弹窗及遮罩层问题</li>
+                      <li>浏览器前进后退问题</li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Web Components</td>
+                  <td>
+                    <ol>
+                      <li>原生不需要框架</li>
+                      <li>易于继承，不需要编译</li>
+                      <li>真正的局部CSS作用域</li>
+                    </ol>
+                  </td>
+                  <td>
+                    <ol>
+                      <li>重写现有的前端应用</li>
+                      <li>上下游生态系统不完善</li>
+                      <li>系统架构复杂</li>
+                      <li>兼容性問題</li>
+                    </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </section>
+          <!-- <section>
+            <img src="./assets/fangan.png" alt="" />
+          </section> -->
           <section data-markdown>
             <textarea data-template>
               2.具体代码
